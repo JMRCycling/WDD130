@@ -1,0 +1,19 @@
+/* * {
+    border: 2px solid red;
+} */
+body {
+    margin: 0 auto;
+    width: 75%;
+    background-color: pink;
+}
+h1, p, h3, div {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    
+}
+img:hover {
+    cursor: none;
+}
