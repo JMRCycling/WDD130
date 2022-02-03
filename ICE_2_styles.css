@@ -1,0 +1,26 @@
+.container {
+    position: relative;
+    text-align: relative;
+    color: white;
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.in_img_text {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+}
+.row {
+    flex-direction: row;
+    background-color: grey;
+    padding: 5%;
+    
+}
+.img {
+    width: 25%;
+    margin: 0% 2%;
+    border-radius: 50%;
+    align-self: center;
+    border: 5px solid black;
+}
