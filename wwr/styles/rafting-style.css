@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&family=Roboto+Mono&family=Ubuntu&display=swap');
 
 :root {
     /* change the values below to your colors from your palette */
@@ -7,7 +9,7 @@
     --accent2-color: #979dac;
   
     /* change the values below to your chosen font(s) */
-    --heading-font: "Ubuntu";
+    --heading-font: "Ubuntu" ;
     --paragraph-font: "Noto Sans";
   
     /* these colors below should be chosen from among your palette colors above */
@@ -28,8 +30,14 @@
 body {
     /* margin: 0 auto;
     width: 75%; */
-    /* text-align: center; */
+    text-align: center;
     background-color: var(--secondary-color);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 
 #content {
@@ -40,6 +48,7 @@ nav a {
     text-align: center;
     color: var(--accent2-color);
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -49,6 +58,7 @@ nav a {
 }
 main section {
     text-align: center;
+    box-sizing: border-box;
 }
 #background {
     height: 725px;
@@ -63,6 +73,10 @@ nav a:hover {
 .book, .join{
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: var(--nav-background-color);
@@ -71,18 +85,48 @@ nav a:hover {
 #background{
     background-color: var(--secondary-color);
 }
-.msg {
+.msg p {
     background-color: var(--secondary-color);
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: var(--secondary-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 footer h3 a:hover {
     text-decoration: underline;
 }
 .logo {
     width: 80px;
+    border-radius: 50%;
+}
+.msg h2 {
+    font-family: var(--heading-font);
+}
+.home-title {
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+.msg {
+    line-height: 1.5em;
+    padding: 35px;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid black;
 }
