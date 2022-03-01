@@ -18,11 +18,11 @@
     --headline-color-on-white: #396E94;  /* headlines on a white background */ 
     --headline-color-on-color: white; /* headlines on a colored background */ 
     --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-color-on-color: whitesmoke; /* paragraph text on a colored background */ 
     --paragraph-background-color: #396E94  ;
     --nav-link-color: #979dac;
     --nav-background-color: #8d99ae;
-    --nav-hover-link-color: white;
+    --nav-hover-link-color: whitesmoke;
     --nav-hover-background-color: #396E94;
   }
 
@@ -192,6 +192,15 @@ footer .social img {
 .mountains {
     grid-column: 2/7;
     grid-row: 5/10;
+}
+.river-paragraph {
+    color: var(--paragraph-color-on-color);
+}
+.river-h1 {
+    color: var(--accent2-color);
+}
+.river-img {
+    width: 50%;
 }
 
 @media screen and (max-width: 900px) {
