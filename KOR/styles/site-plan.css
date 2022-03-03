@@ -34,6 +34,9 @@ Fonts are separated by a | */
 .image_100 {
   width: 100%;
 }
+.image_50 {
+  width: 50%;
+}
 
 body {
   max-width: 1200px;
