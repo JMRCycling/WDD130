@@ -27,10 +27,12 @@
 
 
 .link{
-    font-size: 25px;
+    font-size: 30px;
     padding: 5px;
     /* background-color: var(--secondary-color); */
     border-radius: 5px;
+    text-decoration: none;
+    color: var(--accent3-color);
 }
 
 .image_100 {
@@ -41,6 +43,7 @@
 }
 .icon {
     width: 30%;
+    border-radius: 50px;
 }
 #header_grid {
     display: grid;
