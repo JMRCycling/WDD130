@@ -83,6 +83,27 @@ nav {
 .title{
   text-align: center;
 }
+.person-content {
+  /* margin: 0px 30px; */
+  fill-opacity: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.person-card {
+  margin: 3%;
+  width: 25%;
+  background-color: var(--secondary-color);
+  padding: 5px;
+  text-align: center;
+}
+.point-link {
+  text-decoration: none;
+  color: var(--accent1-color);
+}
+.point-link:hover {
+  color: var(--accent3-color);
+}
 .header {
     width: 100%;
     height: 100px;
