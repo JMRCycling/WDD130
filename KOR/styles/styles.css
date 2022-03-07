@@ -214,21 +214,27 @@ body {
 @media screen and (max-width: 900px) {
   .parallax_home {
     background-attachment: scroll;
+    min-height: 200px;
   }
   .parallax2_home {
     background-attachment: scroll;
+    min-height: 200px;
   }
   .parallax_sign_up {
     background-attachment: scroll;
+    min-height: 200px;
   }
   .parallax2_sign_up {
     background-attachment: scroll;
+    min-height: 200px;
   }
   .parallax_our_story {
     background-attachment: scroll;
+    min-height: 200px;
   }
   .parallax2_our_story {
     background-attachment: scroll;
+    min-height: 200px;
   }
   
 } 
