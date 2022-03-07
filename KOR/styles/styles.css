@@ -118,6 +118,34 @@ body {
   background-size: cover;
 }
 
+.parallax_our_story {
+  /* The image used */
+  background-image: url("../images/racing_jessie.JPG");
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2_our_story {
+  /* The image used */
+  background-image: url("../images/jessie_racing_2.JPG");
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .title{
   text-align: center;
 }
@@ -181,4 +209,26 @@ body {
 }
 .paragraph {
   text-align: center;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax_home {
+    background-attachment: scroll;
+  }
+  .parallax2_home {
+    background-attachment: scroll;
+  }
+  .parallax_sign_up {
+    background-attachment: scroll;
+  }
+  .parallax2_sign_up {
+    background-attachment: scroll;
+  }
+  .parallax_our_story {
+    background-attachment: scroll;
+  }
+  .parallax2_our_story {
+    background-attachment: scroll;
+  }
+  
 }
