@@ -149,14 +149,14 @@ body {
 .title{
   text-align: center;
 }
-.person-content {
+.point-content {
   /* margin: 0px 30px; */
   fill-opacity: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.person-card {
+.point-card {
   margin: 3%;
   width: 25%;
   background-color: var(--secondary-color);
@@ -235,6 +235,13 @@ body {
   .parallax2_our_story {
     background-attachment: scroll;
     min-height: 200px;
+  }
+  .point-content {
+    display: block;
+    
+  }
+  .point-card {
+    width: 100%;
   }
   
 } 
