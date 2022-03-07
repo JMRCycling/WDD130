@@ -42,9 +42,9 @@ nav {
     color: var(--accent3-color);
 }
 
-body {
+/* body {
   text-align: center;
-}
+} */
 
 .image_100 {
 
@@ -242,6 +242,14 @@ body {
   }
   .point-card {
     text-align: center;
+    width: 50%;
+    margin: 5px 25%;
+  }
+  .payment-plans {
+    display: block;
+  }
+  .payment-card {
+
     width: 50%;
     margin: 5px 25%;
   }
