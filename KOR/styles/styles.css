@@ -214,34 +214,36 @@ body {
 @media screen and (max-width: 900px) {
   .parallax_home {
     background-attachment: scroll;
-    min-height: 200px;
+    min-height: 400px;
   }
   .parallax2_home {
     background-attachment: scroll;
-    min-height: 200px;
+    min-height: 400px;
   }
   .parallax_sign_up {
     background-attachment: scroll;
-    min-height: 200px;
+    min-height: 400px;
   }
   .parallax2_sign_up {
     background-attachment: scroll;
-    min-height: 200px;
+    min-height: 400px;
   }
   .parallax_our_story {
     background-attachment: scroll;
-    min-height: 200px;
+    min-height: 400px;
   }
   .parallax2_our_story {
     background-attachment: scroll;
-    min-height: 200px;
+    min-height: 400px;
   }
   .point-content {
     display: block;
     
   }
   .point-card {
-    width: 100%;
+    text-align: center;
+    width: 50%;
+    margin: 5px 25%;
   }
   
 } 
