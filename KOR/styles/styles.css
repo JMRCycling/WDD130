@@ -181,6 +181,19 @@ nav {
   /* text-align: center; */
   border-radius: 15px;
 }
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact-card {
+  margin: 3%;
+  width: 25%;
+  background-color: var(--secondary-color);
+  padding: 5px;
+  /* text-align: center; */
+  border-radius: 15px;
+}
 .point-link {
   text-decoration: none;
   color: var(--accent1-color);
@@ -260,5 +273,10 @@ nav {
     width: 50%;
     margin: 5px 25%;
   }
+  .contact-content {
+
+  }
+  .contact-card {
   
+  }
 } 
