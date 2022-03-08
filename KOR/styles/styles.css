@@ -288,9 +288,10 @@ h1 {
     margin: 5px 25%;
   }
   .contact-content {
-
+    display: block;
   }
   .contact-card {
-  
+    width: 50%;
+    margin: 5px 25%;
   }
 } 
