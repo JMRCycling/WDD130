@@ -36,11 +36,15 @@ nav {
 .link{
     font-size: 2em;
     padding: 5px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 5px;
     text-decoration: none;
-    color: var(--accent3-color);
+    color: var(--accent2-color);
     font-family: var(--heading-font);
+}
+.link:hover {
+  background-color: var(--secondary-color);
+  color: whitesmoke;
 }
 
 /* body {
