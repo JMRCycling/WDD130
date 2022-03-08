@@ -41,6 +41,7 @@ nav {
     text-decoration: none;
     color: var(--accent2-color);
     font-family: var(--heading-font);
+    margin: 0px 1%;
 }
 .link:hover {
   background-color: var(--secondary-color);
@@ -234,6 +235,9 @@ nav {
 .list {
   font-family: var(--paragraph-font);
 }
+
+/* form CSS */
+
 
 @media screen and (max-width: 900px) {
   .parallax_home {
