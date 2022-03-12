@@ -72,7 +72,7 @@ nav {
 }
 .parallax_home {
   /* The image used */
-  background-image: url("../images/wilson_background.JPG");
+  background-image: url("../images/wilson_background-min.JPG");
 
   /* Set a specific height */
   min-height: 700px;
@@ -86,7 +86,7 @@ nav {
 
 .parallax2_home {
   /* The image used */
-  background-image: url("../images/wilson_background_2.JPG");
+  background-image: url("../images/wilson_background_2-min.JPG");
 
   /* Set a specific height */
   min-height: 700px;
@@ -100,7 +100,7 @@ nav {
 
 .parallax_sign_up {
   /* The image used */
-  background-image: url("../images/shop.jpg");
+  background-image: url("../images/shop-min.jpg");
 
   /* Set a specific height */
   min-height: 700px;
@@ -114,7 +114,7 @@ nav {
 
 .parallax2_sign_up {
   /* The image used */
-  background-image: url("../images/bike_shop.jpeg");
+  background-image: url("../images/bike_shop-min.jpeg");
 
   /* Set a specific height */
   min-height: 600px;
@@ -128,7 +128,7 @@ nav {
 
 .parallax_our_story {
   /* The image used */
-  background-image: url("../images/racing_jessie.JPG");
+  background-image: url("../images/racing_jessie-min.JPG");
 
   /* Set a specific height */
   min-height: 700px;
@@ -142,7 +142,7 @@ nav {
 
 .parallax2_our_story {
   /* The image used */
-  background-image: url("../images/jessie_racing_2.JPG");
+  background-image: url("../images/jessie_racing_2-min.JPG");
 
   /* Set a specific height */
   min-height: 700px;
