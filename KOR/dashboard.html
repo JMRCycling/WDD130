@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOR | Contact Us </title>
+    <title>Dashboard</title>
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="./images/Logo3.png">
     <style>
@@ -97,49 +97,36 @@
     </header>
 
     <main>
-        <h1>Contact Us</h1>
-        <h3 class="paragraph">We love questions and feedback - and we're always happy to help! Here are some ways to contact us</h3>
-        <h1 class="title">Here are the founders below</h1>
-        <div class="contact-content">
-            <div class="contact-card">
-                <h1>Mason Tuft</h1>
-                <img src="images/mason_riding.jpg" alt="Mason" class="image_50">
-                <h3 class="title">Developer</h3>
-            </div>
-            <div class="contact-card">
-                <h1>Robert Tuft</h1>
-                <img src="#" alt="Robert" class="image_50">
-                <h3 class="title">Senior Developer</h3>
-            </div>
-            <div class="contact-card">
-                <h1>Jessica Wyman</h1>
-                <img src="#" alt="Jessica" class="image_50">
-                <h3 class="title">Project Manager</h3>
-            </div>
+        <div>
+            <h1>Welcome Rolling H Cycles</h1>
+            <h2 class="paragraph">This is your Dashboard to invite customers to our app!!!</h2>
+            <h3 class="paragraph">Just fill out the form below</h3>
         </div>
         
-        <form action="#" method="post">
-            <div id="feedback"></div>
-            <ul>
-                <li>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="user_name" placeholder="first name/last name">
-                </li>
-                <li>
-                  <label for="mail">E-mail:</label>
-                  <input type="email" id="mail" name="user_email" placeholder="name@example.com">
-                </li>
-                <li>
-                  <label for="msg">Message:</label>
-                  <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-               </ul>
+        <div>
+            <form action="#" method="post">
+                <div id="feedback"></div>
+                <ul>
+                    <li>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="user_name" placeholder="first name/last name">
+                    </li>
+                    <li>
+                      <label for="mail">E-mail:</label>
+                      <input type="email" id="mail" name="user_email" placeholder="name@example.com">
+                    </li>
+                    <!-- <li>
+                      <label for="msg">Message:</label>
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li> -->
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                   </ul>
+    
+            </form>
+        </div>
 
-        </form>
-        
     </main>
 
     <footer>
@@ -154,13 +141,10 @@
         formElement.addEventListener('submit', function(e) {
             // stop the form from doing the default action.
             e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            window.alert('Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!');
-            // feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
+            
+            window.alert('Thank you!! we will send them an invite!!');
+            // call a .js to use an email sending service to invite the customer
+            
         });
     </script>
 </body>
