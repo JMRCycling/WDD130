@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOR | Login</title>
+    <link type="text/css" rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="./images/Logo3.png">
+    <script>
+
+        // let subParameters = getParameter('sub_id', 'invoice_id');
+        // function getParameter( parameterSubId, parameterInvoiceId ){
+        //     console.log('getting Params')
+        //     let parameters = new URLSearchParams( window.location.search );
+        //     // subParameters.append()
+        //     return (parameters.get( parameterSubId ), parameters.get(parameterInvoiceId)); 
+        //     // return parameters.get(parameterInvoiceId)
+        //     // console.log(parameters);
+        //     // return parameters
+        // }
+        var sub_Id = new URLSearchParams( window.location.search );
+        sub_Id = sub_Id.get('sub_id');
+        // console.log(sub_Id);
+        var invoice_Id = new URLSearchParams( window.location.search );
+        invoice_Id = invoice_Id.get('invoice_id');
+        // console.log(invoice_Id);
+
+        
+    </script>
+</head>
+<body>
+    <header>
+        <iframe class="header" src="../header.html"   scrolling="no"></iframe>
+    </header>
+
+    <main>
+        <div>
+            <p class="paragraph">Your subscription Id is <script type="text/javascript">document.write(sub_Id)</script></p>
+            <p class="paragraph">Your invoice ID is <script type="text/javascript">document.write(invoice_Id)</script></p>
+        </div>
+        <div id="login_window">
+            <h1>Login</h1>
+            <form action="/KOR/shop_tools/dashboard.html" method="get" class="login_form" onclick="loginUser()">
+            <!-- <div id="feedback"> -->
+                <div class="form_line">
+                    <label for="username">Username: </label>
+                    <input type="text" id="username" name="user_name" placeholder="Username">
+                </div>
+                <div class="form_line">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div class="form_line">
+                    <button class="link" type="submit" onclick="">Submit</button>
+                </div>
+            <!-- </div> -->
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <iframe class="footer" src="../footer.html"   scrolling="no"></iframe>
+    </footer>
+</body>
+</html>

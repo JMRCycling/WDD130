@@ -290,6 +290,19 @@ h1 {
   font-family: var(--paragraph-font);
 }
 
+#login_window {
+  margin: 0 auto;
+  width: 30%;
+  /* height: 50%; */
+  background-color: var(--secondary-color);
+}
+.login_form {
+  text-align: center;
+}
+.form_line {
+  padding: 10px;
+}
+
 /* form CSS */
 
 
