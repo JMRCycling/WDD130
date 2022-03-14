@@ -290,7 +290,7 @@ h1 {
   font-family: var(--paragraph-font);
 }
 
-#login_window {
+.login_window {
   margin: 0 auto;
   width: 30%;
   /* height: 50%; */
