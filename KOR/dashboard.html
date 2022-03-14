@@ -90,6 +90,26 @@
             
         }
     </style>
+    <script>
+
+        // let subParameters = getParameter('sub_id', 'invoice_id');
+        // function getParameter( parameterSubId, parameterInvoiceId ){
+        //     console.log('getting Params')
+        //     let parameters = new URLSearchParams( window.location.search );
+        //     // subParameters.append()
+        //     return (parameters.get( parameterSubId ), parameters.get(parameterInvoiceId)); 
+        //     // return parameters.get(parameterInvoiceId)
+        //     // console.log(parameters);
+        //     // return parameters
+        // }
+        var sub_Id = new URLSearchParams( window.location.search );
+        sub_Id = sub_Id.get('sub_id');
+        // console.log(sub_Id);
+        var invoice_Id = new URLSearchParams( window.location.search );
+        invoice_Id = invoice_Id.get('invoice_id');
+        // console.log(invoice_Id);
+
+    </script>
 </head>
 <body>
     <header>
@@ -101,6 +121,8 @@
             <h1>Welcome Rolling H Cycles</h1>
             <h2 class="paragraph">This is your Dashboard to invite customers to our app!!!</h2>
             <h3 class="paragraph">Just fill out the form below</h3>
+            <p class="paragraph">Your subscription Id is <script type="text/javascript">document.write(sub_Id)</script></p>
+            <p class="paragraph">Your invoice ID is <script type="text/javascript">document.write(invoice_Id)</script></p>
         </div>
         
         <div>
