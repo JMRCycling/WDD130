@@ -25,7 +25,31 @@
         var invoice_Id = new URLSearchParams( window.location.search );
         invoice_Id = invoice_Id.get('invoice_id');
         // console.log(invoice_Id);
+        // const name = document.getElementById('username')
+        // const password = document.getElementById('password')
+        // const form = document.getElementById('form')
+        //  form.addEventListener('submit', (e) => {
+        //     let messages = []
+        //     if (name.value ==='' || name.value == null) {
+        //         messages.push('Name is required')
+        //     }
 
+        //     if (password.value.length <= 6) {
+        //         messages.push('Password must be longer than 6 characters')
+        //     }
+
+        //     if (password.value.length >= 20) {
+        //         messages.push('Password cannot be password')
+        //     }
+
+        //     if (password.value === 'password') {
+        //         messages.push('Password cannot be password')
+        //     }
+        //     if (messages.length > 0) {
+        //         e.preventDefault()
+        //         errorElement.innerText = messages.join(', ')
+        //     }
+        // })
 
     </script>
 </head>
@@ -40,19 +64,20 @@
             <p class="paragraph">Your invoice ID is <script type="text/javascript">document.write(invoice_Id)</script></p>
         </div>
         <div class="login_window">
+            <div id="error"></div>
             <h1>Login</h1>
             <form action="/KOR/shop_tools/dashboard.html" method="get" class="login_form">
             <!-- <div id="feedback"> -->
                 <div class="form_line">
                     <label for="username">Username: </label>
-                    <input type="text" id="username" name="user_name" placeholder="Username">
+                    <input type="text" id="username" name="user_name" placeholder="Username" required>
                 </div>
                 <div class="form_line">
                     <label for="password">Password: </label>
-                    <input type="password" id="password" name="password" placeholder="Password">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
                 </div>
                 <div class="form_line">
-                    <button class="link" type="submit" onclick="">Submit</button>
+                    <button class="link" type="submit">Submit</button>
                 </div>
             <!-- </div> -->
             </form>
@@ -63,5 +88,59 @@
     <footer>
         <iframe class="footer" src="../footer.html"   scrolling="no"></iframe>
     </footer>
+    <!-- <script>
+        const name = document.getElementById('user_name')
+        const password = document.getElementById('password')
+        const form = document.getElementById('form')
+         form.addEventListener('submit', (e) => {
+            let messages = []
+            if (name.value ==='' || name.value == null) {
+                messages.push('Name is required')
+            }
+
+            if (password.value.length <= 6) {
+                messages.push('Password must be longer than 6 characters')
+            }
+
+            if (password.value.length >= 20) {
+                messages.push('Password cannot be password')
+            }
+
+            if (password.value === 'password') {
+                messages.push('Password cannot be password')
+            }
+            if (messages.length > 0) {
+                e.preventDefault()
+                errorElement.innerText = messages.join(', ')
+            }
+        })
+    </script> -->
 </body>
+<script>
+    const name = document.getElementById('user_name')
+    const password = document.getElementById('password')
+    const form = document.getElementById('form')
+     form.addEventListener('submit', (e) => {
+        let messages = []
+        if (name.value ==='' || name.value == null) {
+            messages.push('Name is required')
+        }
+
+        if (password.value.length <= 6) {
+            messages.push('Password must be longer than 6 characters')
+        }
+
+        if (password.value.length >= 20) {
+            messages.push('Password cannot be password')
+        }
+
+        if (password.value === 'password') {
+            messages.push('Password cannot be password')
+        }
+        if (messages.length > 0) {
+            e.preventDefault()
+            errorElement.innerText = messages.join(', ')
+        }
+    })
+</script>
 </html>
