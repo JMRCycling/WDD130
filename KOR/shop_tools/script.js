@@ -25,8 +25,12 @@ signin.addEventListener("submit", (e) => {
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
     var urlencoded = new URLSearchParams();
-    urlencoded.append("user_name", document.getElementById("username").value);
-    urlencoded.append("password", document.getElementById("password").value);
+    var username = document.getElementById("username").value;
+    urlencoded.append("user_name", username);
+    console.log((document.getElementById("username").value));
+    var password = document.getElementById("password").value;
+    urlencoded.append("password", password);
+    console.log((document.getElementById("password").value));
     urlencoded.append("sub_Id", sub_Id);
     urlencoded.append("invoice_Id", invoice_Id);
 
