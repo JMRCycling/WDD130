@@ -34,17 +34,17 @@ signin.addEventListener("submit", (e) => {
     urlencoded.append("sub_Id", sub_Id);
     urlencoded.append("invoice_Id", invoice_Id);
 
-    var requestOptions = {
-        method: 'POST',
-        headers: myHeaders,
-        body: urlencoded,
-        redirect: 'follow'
-    };
+    // var requestOptions = {
+    //     method: 'POST',
+    //     headers: myHeaders,
+    //     body: urlencoded,
+    //     // redirect: 'follow'
+    // };
 
-    fetch("https://masontuft.com/signinShop", requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
-        .catch(error => console.log('error', error));
+    // fetch("https://masontuft.com/signinShop", requestOptions)
+    //     .then(response => response.text())
+    //     .then(result => console.log(result))
+    //     .catch(error => console.log('error', error));
 
 
     // let user = {
