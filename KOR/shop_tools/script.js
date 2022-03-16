@@ -28,8 +28,10 @@ signin.addEventListener("submit", (e) => {
     myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
     var urlencoded = new URLSearchParams();
-    var username = document.getElementById("username").value;
-    urlencoded.append("user_name", username);
+    var shop_name = document.getElementById("shop_name").value;
+    urlencoded.append("shop_name", shop_name); 
+    var email = document.getElementById("email").value;
+    urlencoded.append("email", email);
     // console.log((document.getElementById("username").value));
     var password = document.getElementById("password").value;
     urlencoded.append("password", password);
@@ -47,7 +49,10 @@ signin.addEventListener("submit", (e) => {
 
     fetch("https://masontuft.com/signinShop", requestOptions)
         .then(response => response.text())
-        .then(result => console.log(result))
+        .then(result => {
+            console.log(result)
+
+        })
         .catch(error => console.log('error', error));
 
 
