@@ -30,12 +30,13 @@ signin.addEventListener("submit", (e) => {
     var urlencoded = new URLSearchParams();
     var username = document.getElementById("username").value;
     urlencoded.append("user_name", username);
-    console.log((document.getElementById("username").value));
+    // console.log((document.getElementById("username").value));
     var password = document.getElementById("password").value;
     urlencoded.append("password", password);
-    console.log((document.getElementById("password").value));
+    // console.log((document.getElementById("password").value));
     urlencoded.append("sub_Id", sub_Id);
     urlencoded.append("invoice_Id", invoice_Id);
+    urlencoded.append("plan_type", plan_type);
 
     var requestOptions = {
         method: 'POST',
