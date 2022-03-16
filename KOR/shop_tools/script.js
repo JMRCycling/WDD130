@@ -7,6 +7,9 @@ console.log(sub_Id);
 var invoice_Id = new URLSearchParams( window.location.search );
 invoice_Id = invoice_Id.get('invoice_id');
 console.log(invoice_Id);
+var plan_type = new URLSearchParams( window.location.search );
+plan_type = plan_type.get('plan_type');
+console.log(plan_type);
 
 // var form = document.querySelector("signin");
 const signin = document.getElementById("signin");
