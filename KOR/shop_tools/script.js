@@ -65,8 +65,9 @@ signin.addEventListener("submit", (e) => {
             fetch("https://masontuft.com/loginShop", requestOptions2)
                 .then(response => response.text())
                 .then(result => {
-                    console.log(result)
-                    window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type.plan_type);
+                    console.log(result);
+                    console.log(result.plan_type.plan_type);
+                    // window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type.plan_type);
                 })
                 .catch(error => console.log('error', error));
 
