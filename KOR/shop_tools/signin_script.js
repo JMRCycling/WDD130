@@ -1,6 +1,4 @@
-// import axios from 'axios';
 
-// console.log('javascript linking successful');
 var sub_Id = new URLSearchParams( window.location.search );
 sub_Id = sub_Id.get('sub_id');
 console.log(sub_Id);
@@ -11,13 +9,9 @@ var plan_type = new URLSearchParams( window.location.search );
 plan_type = plan_type.get('plan_type');
 console.log(plan_type);
 
-// var form = document.querySelector("signin");
+
 const signin = document.getElementById("signin");
-// console.log(form)
 
-// signin.addEventListener('submit', (e) => {
-
-// });
 
 signin.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -65,10 +59,8 @@ signin.addEventListener("submit", (e) => {
             fetch("https://masontuft.com/loginShop", requestOptions2)
                 .then(response => response.json())
                 .then(result => {
-                    console.log(/*JSON.stringify*/('plan type ' + result.plan_type[0].plan_type));
-                    // console.log(response);
-                    // console.log(JSON.stringify(result));
-                    // console.log((response));
+                    console.log(('plan type ' + result.plan_type[0].plan_type));
+                    
                     window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type[0].plan_type);
                 })
                 .catch(error => console.log('error', error));
@@ -77,20 +69,8 @@ signin.addEventListener("submit", (e) => {
         .catch(error => console.log('error', error));
 
 
-    // let user = {
-    //     user_name: document.getElementById("username"),
-    //     password: document.getElementById("password"),
-    //     sub_Id: sub_Id,
-    //     invoice_Id: invoice_Id,
-    // };
-    
-    // let response = fetch('https://masontuft.com/signinShop', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json;charset=utf-8'
-    //     },
-    //         body: user
-    //         // body: JSON.stringify(user)
-    // });
+
 });
+
+
    
