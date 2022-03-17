@@ -51,6 +51,24 @@ signin.addEventListener("submit", (e) => {
         .then(response => response.text())
         .then(result => {
             console.log(result)
+            var urlencoded2 = new URLSearchParams();
+            urlencoded2.append("email", email)
+            urlencoded2.append("password", password)
+
+            var requestOptions2 = {
+                method: 'POST',
+                headers: myHeaders,
+                body: urlencoded2,
+                redirect: 'follow'
+            };
+
+            fetch("https://masontuft.com/loginShop", requestOptions2)
+                .then(response => response.text())
+                .then(result => {
+                    console.log(result)
+                    window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type);
+                })
+                .catch(error => console.log('error', error));
 
         })
         .catch(error => console.log('error', error));
