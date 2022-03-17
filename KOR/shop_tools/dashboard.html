@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOR | Dashboard</title>
     <link type="text/css" rel="stylesheet" href="../styles/styles.css">
-    <link rel="icon" href="./images/Logo3.png">
-    <script defer src="/KOR/shop_tools/dashboard_script.js"></script><!--used during development, if development is buggy. Try commenting out this line-->
-    <script defer src="https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard_script.js"></script>
+    <link rel="icon" href="../images/Logo3.png">
+    <!-- <script defer src="/KOR/shop_tools/dashboard_script.js"></script>used during development, if development is buggy. Try commenting out this line -->
+    <!-- <script defer src="https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard_script.js"></script> -->
     <style>
         form {
         /* Center the form on the page */
@@ -94,22 +94,16 @@
     </style>
     <script>
 
-        // let subParameters = getParameter('sub_id', 'invoice_id');
-        // function getParameter( parameterSubId, parameterInvoiceId ){
-        //     console.log('getting Params')
-        //     let parameters = new URLSearchParams( window.location.search );
-        //     // subParameters.append()
-        //     return (parameters.get( parameterSubId ), parameters.get(parameterInvoiceId)); 
-        //     // return parameters.get(parameterInvoiceId)
-        //     // console.log(parameters);
-        //     // return parameters
-        // }
-        var sub_Id = new URLSearchParams( window.location.search );
-        sub_Id = sub_Id.get('sub_id');
-        // console.log(sub_Id);
-        var invoice_Id = new URLSearchParams( window.location.search );
-        invoice_Id = invoice_Id.get('invoice_id');
-        // console.log(invoice_Id);
+       
+        // var sub_Id = new URLSearchParams( window.location.search );
+        // sub_Id = sub_Id.get('sub_id');
+        // // console.log(sub_Id);
+        // var invoice_Id = new URLSearchParams( window.location.search );
+        // invoice_Id = invoice_Id.get('invoice_id');
+        // // console.log(invoice_Id);
+        var shop_name = new URLSearchParams( window.location.search );
+        shop_name = shop_name.get('shop_name')
+        console.log(shop_name);
 
     </script>
 </head>
