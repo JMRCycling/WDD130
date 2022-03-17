@@ -63,17 +63,13 @@ signin.addEventListener("submit", (e) => {
             };
 
             fetch("https://masontuft.com/loginShop", requestOptions2)
-                .then(response => {
-                    const data = await response.json();
-                    console.log(data);
-                })
+                .then(response => response.json())
                 .then(result => {
-                    // result.json();
-                    console.log(result);
+                    console.log(/*JSON.stringify*/('plan type ' + result.plan_type[0].plan_type));
                     // console.log(response);
                     // console.log(JSON.stringify(result));
-                    console.log(JSON.stringify(response.plan_type[0].plan_type));
-                    // window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + plan_type),
+                    // console.log((response));
+                    window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type[0].plan_type);
                 })
                 .catch(error => console.log('error', error));
 
