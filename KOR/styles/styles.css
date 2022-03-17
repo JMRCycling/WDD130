@@ -68,7 +68,7 @@ nav {
 }
 #header_grid {
     display: grid;
-    grid-template-columns: 150px 3fr;
+    grid-template-columns: 150px 2fr 0.5fr;
 }
 .parallax_home {
   /* The image used */
