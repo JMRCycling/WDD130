@@ -60,8 +60,9 @@ signin.addEventListener("submit", (e) => {
                 .then(response => response.json())
                 .then(result => {
                     console.log(('plan type ' + result.plan_type[0].plan_type));
+                    console.log(('shop_name ' + result.plan_type[0].shop_name));
                     
-                    window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type[0].plan_type);
+                    window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type[0].plan_type + "&shop_name=" + result.plan_type[0].shop_name);
                 })
                 .catch(error => console.log('error', error));
 
