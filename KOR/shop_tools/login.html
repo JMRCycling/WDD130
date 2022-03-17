@@ -7,51 +7,46 @@
     <title>KOR | Login</title>
     <link type="text/css" rel="stylesheet" href="../styles/styles.css">
     <link rel="icon" href="../images/Logo3.png">
-    <script>
+    <script defer src="/KOR/shop_tools/login_script.js"></script><!--used during development, if development is buggy. Try commenting out this line-->
+    <script defer src="https://jmrcycling.github.io/WDD130/KOR/shop_tools/login_script.js"></script>
+    <!-- <script defer>
 
-        // let subParameters = getParameter('sub_id', 'invoice_id');
-        // function getParameter( parameterSubId, parameterInvoiceId ){
-        //     console.log('getting Params')
-        //     let parameters = new URLSearchParams( window.location.search );
-        //     // subParameters.append()
-        //     return (parameters.get( parameterSubId ), parameters.get(parameterInvoiceId)); 
-        //     // return parameters.get(parameterInvoiceId)
-        //     // console.log(parameters);
-        //     // return parameters
-        // }
-        var sub_Id = new URLSearchParams( window.location.search );
-        sub_Id = sub_Id.get('sub_id');
-        // console.log(sub_Id);
-        var invoice_Id = new URLSearchParams( window.location.search );
-        invoice_Id = invoice_Id.get('invoice_id');
-        // console.log(invoice_Id);
-        // const name = document.getElementById('username')
-        // const password = document.getElementById('password')
-        // const form = document.getElementById('form')
-        //  form.addEventListener('submit', (e) => {
-        //     let messages = []
-        //     if (name.value ==='' || name.value == null) {
-        //         messages.push('Name is required')
-        //     }
+        const login = document.getElementById("login");
+        console.log(login)
 
-        //     if (password.value.length <= 6) {
-        //         messages.push('Password must be longer than 6 characters')
-        //     }
+        login.addEventListener("submit", (e) => {
+            e.preventDefault();
 
-        //     if (password.value.length >= 20) {
-        //         messages.push('Password cannot be password')
-        //     }
+            console.log('form has been submitted');
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
-        //     if (password.value === 'password') {
-        //         messages.push('Password cannot be password')
-        //     }
-        //     if (messages.length > 0) {
-        //         e.preventDefault()
-        //         errorElement.innerText = messages.join(', ')
-        //     }
-        // })
+            var urlencoded = new URLSearchParams();
+            var email = document.getElementById("email").value;
+            urlencoded.append("email", email);
+            var password = document.getElementById("password").value;
+            urlencoded.append("password", password);
 
-    </script>
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                body: urlencoded,
+                redirect: 'follow'
+            };
+
+            fetch("https://masontuft.com/loginShop", requestOptions)
+                .then(response => response.json())
+                .then(result => {
+                    console.log(('plan type ' + result.plan_type[0].plan_type));
+                    console.log(('shop_name ' + result.plan_type[0].shop_name));
+                    
+                    window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type[0].plan_type + "&shop_name=" + result.plan_type[0].shop_name);
+                })
+                .catch(error => console.log('error', error));
+
+        })
+
+    </script> -->
 </head>
 <body>
     <header>
@@ -59,18 +54,18 @@
     </header>
 
     <main>
-        <div>
+        <!-- <div>
             <p class="paragraph">Your subscription Id is <script type="text/javascript">document.write(sub_Id)</script></p>
             <p class="paragraph">Your invoice ID is <script type="text/javascript">document.write(invoice_Id)</script></p>
-        </div>
+        </div> -->
         <div class="login_window">
-            <div id="error"></div>
+            <!-- <div id="error"></div> -->
             <h1>Login</h1>
-            <form action="/KOR/shop_tools/dashboard.html" method="get" class="login_form">
+            <form id="login" class="login_form">
             <!-- <div id="feedback"> -->
                 <div class="form_line">
-                    <label for="username">Username: </label>
-                    <input type="text" id="username" name="user_name" placeholder="Username" required>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Youraddress@example.com" required>
                 </div>
                 <div class="form_line">
                     <label for="password">Password: </label>
@@ -116,7 +111,7 @@
         })
     </script> -->
 </body>
-<script>
+<!-- <script>
     const name = document.getElementById('user_name')
     const password = document.getElementById('password')
     const form = document.getElementById('form')
@@ -142,5 +137,5 @@
             errorElement.innerText = messages.join(', ')
         }
     })
-</script>
+</script> -->
 </html>
