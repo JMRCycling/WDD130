@@ -66,8 +66,9 @@ signin.addEventListener("submit", (e) => {
                 .then(response => response.text())
                 .then(result => {
                     console.log(result);
-                    console.log(result.plan_type.plan_type);
-                    // window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + result.plan_type.plan_type);
+                    // console.log(JSON.stringify(result));
+                    // console.log(JSON.parse(result.plan_type.plan_type));
+                    window.location.replace("https://jmrcycling.github.io/WDD130/KOR/shop_tools/dashboard?plan_type=" + plan_type);
                 })
                 .catch(error => console.log('error', error));
 
