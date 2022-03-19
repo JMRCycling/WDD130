@@ -268,19 +268,24 @@ h1 {
     position: relative;
     top: 0px;
     left: 0px;
+    
 }
 
 .footer {
-    height: 200px; 
+    height: 250px; 
     width: 100%;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     position: relative;
-    bottom: 0px;
-    left: 0px;
+    /* bottom: 0px; */
+    /* left: 0px; */
     background-color: var(--primary-color);
     /* border-radius: 15px; */
-    text-align: center;
+    /* text-align: center; */
     font-family: var(--heading-font);
+    scroll-behavior: unset;
+}
+#footer-holder {
+  text-align: center;
 }
 .paragraph {
   text-align: center;
