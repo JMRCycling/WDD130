@@ -291,10 +291,11 @@ h1 {
 }
 
 .login_window {
-  margin: 0 auto;
+  margin: 10% auto;
   width: 30%;
   /* height: 50%; */
   background-color: var(--secondary-color);
+  border-radius: 25px;
 }
 .login_form {
   text-align: center;
